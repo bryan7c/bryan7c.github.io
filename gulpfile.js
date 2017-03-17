@@ -44,14 +44,16 @@ gulp.task('webserver', function() {
 
 gulp.task('copy', function() {
     gulp.src([
-	folderPaths.css+"**/*/*.*",
+	folderPaths.css+"**/*",
+	folderPaths.css+"**/*/**",
 	folderPaths.script+"**/*",
 	folderPaths.views+"**/*",
 	folderPaths.images+"**/*",
+	folderPaths.images+"**/*/**",
 	folderPaths.partials+"**/*",
-	folderPaths.libs+"**/*/*.*",
-	folderPaths.download+"**/*/*.*",
-	"./public/*.html"
+	folderPaths.libs+"**/*",
+	folderPaths.download+"**/*",
+	"./index.html"
 	])
         .pipe(gulp.dest('./dist/'))
 });
