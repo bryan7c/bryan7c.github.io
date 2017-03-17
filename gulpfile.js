@@ -8,9 +8,10 @@ var folderPaths = {
   css: './css',
   partials: './partial',
   script: './js',
-  images: './img',
-  libs: './lib',
-  views: './views'
+  images: './images',
+  libs: './js',
+  views: './views',
+  download: './download'
 };
 
 var filePaths = {
@@ -42,7 +43,16 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('copy', function() {
-    gulp.src([folderPaths.css+"**/*", folderPaths.script+"**/*", folderPaths.views+"**/*", folderPaths.images+"**/*", folderPaths.partials+"**/*", folderPaths.libs+"**/*/*.*", "./public/*.html"])
+    gulp.src([
+	folderPaths.css+"**/*/*.*",
+	folderPaths.script+"**/*",
+	folderPaths.views+"**/*",
+	folderPaths.images+"**/*",
+	folderPaths.partials+"**/*",
+	folderPaths.libs+"**/*/*.*",
+	folderPaths.download+"**/*/*.*",
+	"./public/*.html"
+	])
         .pipe(gulp.dest('./dist/'))
 });
 
