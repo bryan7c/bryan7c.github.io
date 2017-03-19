@@ -2,6 +2,7 @@ var gulp      = require('gulp');
 var webserver = require('gulp-webserver');
 var opn       = require('opn');
 var plumber   = require('gulp-plumber');
+var shell = require('shelljs');
 
 var folderPaths = {
   scss: './public/sass',
@@ -40,6 +41,12 @@ gulp.task('webserver', function() {
         }
       }
     }));
+});
+
+gulp.task('deploy', function(){
+	shell.exec('git add . && git commit -m "Commit site"');
+	shell.exec('git subtree split --prefix dist -b master');
+	shell.exec('git push --all origin');
 });
 
 gulp.task('copy', function() {
