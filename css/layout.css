@@ -547,31 +547,31 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .gulp {
-  	width: 70%;
+  	width: 30%;
   	-moz-animation: gulp 2s ease;
   	-webkit-animation: gulp 2s ease;
 }
 @-moz-keyframes gulp {
   	0%  { width: 0px }
-    100% { width: 70% }
+    100% { width: 30% }
 }
 @-webkit-keyframes gulp {
   	0%  { width: 0px }
-    100% { width: 70% }
+    100% { width: 30% }
 }
 
 .grunt {
-  	width: 70%;
+  	width: 30%;
   	-moz-animation: grunt 2s ease;
   	-webkit-animation: grunt 2s ease;
 }
 @-moz-keyframes grunt {
   	0%  { width: 0px }
-    100% { width: 70% }
+    100% { width: 30% }
 }
 @-webkit-keyframes grunt {
   	0%  { width: 0px }
-    100% { width: 70% }
+    100% { width: 30% }
 }
 
 .webpack {
