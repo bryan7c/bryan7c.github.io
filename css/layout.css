@@ -336,6 +336,76 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
+.figma {
+  	width: 90%;
+  	-moz-animation: figma 2s ease;
+  	-webkit-animation: figma 2s ease;
+}
+@-moz-keyframes figma {
+  	0%  { width: 0px }
+    100% { width: 90% }
+}
+@-webkit-keyframes figma {
+  	0%  { width: 0px }
+    100% { width: 90% }
+}
+
+.axure {
+  	width: 85%;
+  	-moz-animation: axure 2s ease;
+  	-webkit-animation: axure 2s ease;
+}
+@-moz-keyframes axure {
+  	0%  { width: 0px }
+    100% { width: 85% }
+}
+@-webkit-keyframes axure {
+  	0%  { width: 0px }
+    100% { width: 85% }
+}
+
+.express {
+  	width: 70%;
+  	-moz-animation: express 2s ease;
+  	-webkit-animation: express 2s ease;
+}
+@-moz-keyframes express {
+  	0%  { width: 0px }
+    100% { width: 70% }
+}
+@-webkit-keyframes express {
+  	0%  { width: 0px }
+    100% { width: 70% }
+}
+
+.mongodb {
+  	width: 20%;
+  	-moz-animation: mongodb 2s ease;
+  	-webkit-animation: mongodb 2s ease;
+}
+@-moz-keyframes mongodb {
+  	0%  { width: 0px }
+    100% { width: 20% }
+}
+@-webkit-keyframes mongodb {
+  	0%  { width: 0px }
+    100% { width: 20% }
+}
+
+.node {
+  	width: 50%;
+  	-moz-animation: node 2s ease;
+  	-webkit-animation: node 2s ease;
+}
+@-moz-keyframes node {
+  	0%  { width: 0px }
+    100% { width: 50% }
+}
+@-webkit-keyframes node {
+  	0%  { width: 0px }
+    100% { width: 50% }
+}
+
 .photoshop {
   	width: 90%;
   	-moz-animation: photoshop 2s ease;
