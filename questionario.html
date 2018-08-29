@@ -1,0 +1,223 @@
+<html>
+
+<head>
+    <title>Questionário</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        ol {
+            counter-reset: item;
+            padding: 0;
+        }
+        span{
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            padding-left: 95px;
+        }
+        ol li {
+            display: block;
+            transition: all .5s;
+            padding: 10px;
+            position: relative;
+        }
+        ol li input:focus + span, ol li:hover > span{
+            background-color: #bbecfb;
+        }
+        ol li input:checked + span{
+            color: rgb(207, 207, 207);
+            text-decoration:line-through;
+        }
+        li input{
+            margin: 10px;
+        }
+        ol li:before {
+            content: counter(item) ". ";
+            counter-increment: item;
+            color: rgb(139, 139, 139);
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>GERAL</h1>
+    <ol>
+        <li><input type="checkbox" name="quest" /><span>De forma geral, quão satisfeito ou insatisfeito está com o serviço prestado pela nossa empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Em comparação com os nossos concorrentes, a qualidade do nosso serviço é superior, inferior ou a mesma?</span></li>
+        <li><input type="checkbox" name="quest" /><span>De forma geral, o quanto você está satisfeito ou insatisfeito com os funcionários da nossa empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão prestativa é a nossa empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto você se sente confortável no seu ambiente de trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>O que recomendaria em relação às práticas de gestão de pessoas que ajudasse a melhorar o desempenho geral da
+            empresa?
+        </span></li>
+        <li><input type="checkbox" name="quest" /><span>Quais são as suas recomendações para melhorarmos o nosso software?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem a nossa empresa seguiu o cronograma do seu projeto?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Que medidas a sua empresa pode tomar para melhorar o ambiente de trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Em que medida o nosso software é bem-sucedido na realização das funções que se propõe a fazer?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão útil é o serviço de suporte ao cliente do software?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto o seu colega de trabalho se comunica bem com as outras pessoas?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quanta atenção é dada aos principais problemas do departamento nas reuniões do departamento?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência você sentiu que suas contribuições foram reconhecidas?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quanto orgulho você tem da marca da sua empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Considerando as suas capacidades, quão bem-remunerado você é?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão útil é a documentação que acompanha o nosso software?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência seu departamento respeita os prazos de entrega dos trabalhos?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Descreva as coisas que você mais gostaria que melhorassem neste novo serviço?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão rápida foi a instalação do nosso software?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão honestos são os integrantes do seu departamento entre eles?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que facilidade você obteve os recursos que precisou para desempenhar bem o seu trabalho na empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência você tem vontade de ir para o trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>No geral, você está satisfeito com o seu trabalho, insatisfeito ou nem um, nem outro?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quanto treinamento você recebeu no seu emprego?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual é o nível de conforto do ambiente de trabalho da sua empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão rápido é o seu departamento na implantação das decisões tomadas?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão seguro você se sentiu no ambiente de trabalho da sua empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão significativo você acha que o seu trabalho é?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto você é bem-remunerado pelo trabalho que faz?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto o seu trabalho é desafiador?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual é a probabilidade de você recomendar o nosso produto a outras pessoas?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência você considera sair do seu emprego?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual das seguintes opções melhor descreve o nível do seu cargo atual?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão seguro é o seu ambiente de trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Você é supervisionado demais no trabalho, muito pouco ou na medida certa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Você foi bem remunerado pelo trabalho que fez nesta empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência você sente falta das habilidades necessárias para fazer o seu trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto o seu percurso para o trabalho é longe?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência, se for o caso, você atualmente usa outros produtos semelhantes?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Aproximadamente, quantos funcionários trabalham na sua empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto você acredita nos valores fundamentais do seu empregador para a empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Em que estado brasileiro a sua empresa está sediada atualmente?</span></li>
+        <li><input type="checkbox" name="quest" /><span>O plano de saúde da sua empresa é melhor, pior ou equivalente em comparação com outras empresas?</span></li>
+        <li><input type="checkbox" name="quest" /><span>De um modo geral, até que ponto você foi tratado de forma justa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão profissional é a nossa empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual é a qualidade das respostas fornecidas pelo suporte técnico da nossa empresa às suas questões?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão positivo é o seu ambiente de trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Como você classificaria a qualidade dos nossos produtos?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão fácil de usar é a interface do nosso software?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quanto você gosta do seu trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual deveria ser o tamanho (quantidade de pessoas) do seu departamento? Maior? Menor? Ou do mesmo tamanho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>De um modo geral, você se sente positivo, negativo ou indiferente ao seu ambiente de trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão à vontade você se sentiu para expressar suas opiniões?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Como ficou sabendo desta oportunidade de emprego?</span></li>
+        <li><input type="checkbox" name="quest" /><span>O seu projeto realizado com a nossa empresa está ativo ou foi concluído?</span></li>
+        <li><input type="checkbox" name="quest" /><span>A sua carga de trabalho é muito pesada, muito leve ou razoável?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão rápido é o seu departamento na adaptação necessária pelas mudanças de prioridades realizadas?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto a sua função aqui foi útil para estimular o seu crescimento profissional?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que efetividade você acha que as suas habilidades foram colocadas em prática aqui?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão difícil foi para você conciliar o seu trabalho com a sua vida pessoal enquanto estava trabalhando aqui?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual é a probabilidade de você procurar um emprego novo nos próximos 30 dias?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Em uma semana comum, com que frequência você se sente estressado no trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Aproximadamente, há quanto tempo você ocupa o seu cargo atual?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual foi o grau de utilidade do treinamento que você recebeu quando começou no seu emprego?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual é a probabilidade de você ser promovido se fizer bem o seu trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Você interage demais, muito pouco ou na quantidade certa com os seus clientes?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Descreva as coisas que você mais gostaria que melhorassem neste novo produto?</span></li>
+        <li><input type="checkbox" name="quest" /><span>O ambiente de trabalho do seu empregador é positivo, negativo ou nem um, nem outro?</span></li>
+        <li><input type="checkbox" name="quest" /><span>No geral, até que ponto você achou o seu ambiente de trabalho confortável?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão realistas eram as expectativas estabelecidas para você?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Em que cidade está localizada a sede da sua empresa atualmente?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Você está satisfeito com as suas opções de transporte de ida e volta para o trabalho, insatisfeito ou indiferente?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência você é supervisionado no trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão justa é a política de licença médica da sua empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência você interage com os clientes?</span></li>
+        <li><input type="checkbox" name="quest" /><span>De forma geral, quão satisfeito ou insatisfeito está com os seus benefícios atuais?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão satisfeito está em relação ao benefício refeição?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão satisfeito está em relação ao meio de transporte utilizado para chegar ao local de trabalho e retornar à
+            sua residência?
+        </span></li>
+    </ol>
+    <h1>GERÊNCIA</h1>
+    <ol>
+        <li><input type="checkbox" name="quest" /><span>Qual é o seu nível de interação com a alta gerência?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão realista é a alta gerência em relação às expectativas de resultados?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão efetiva é a alta gerência no relacionamento com o público externo (imprensa, órgãos governamentais, associações
+            setoriais, etc.)?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão acessível é a alta gerência?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão comprometida é a alta gerência para criar um ambiente agradável de trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem a alta gerência lida com os problemas dos funcionários?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem a alta gerência explica as mudancas de planos?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão clara é a alta gerência na explicação do plano de negócios?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão alinhado está o trabalho diário da alta gerência em relação aos objetivos a serem alcançados?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão eficiente é a alta gerência na administração dos recursos da empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>A alta gerência investe muito dinheiro, pouco ou o montante adequado de dinheiro para cumprir os objetivos de
+            curto prazo?
+        </span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem a alta gerência lida com as questões políticas externas que afetam a empresa?</span></li>
+    </ol>
+    <h1>EQUIPE</h1>
+    <ol>
+        <li><input type="checkbox" name="quest" /><span>Quão bem os integrantes da sua equipe lidam com as críticas recebidas pelo trabalho realizado?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem os integrantes da sua equipe compartilham as responsabilidades pelas tarefas?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quanta atenção é dada aos principais problemas nas reuniões de sua equipe?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão honestos são os integrantes da sua equipe uns com os outros?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão rápida é a sua equipe na adaptação necessária pelas mudanças de prioridades realizadas?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão competentes são os integrantes da sua equipe?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem os integrantes da sua equipe se comunicam uns com outros?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual deveria ser o tamanho (quantidade de pessoas) da sua equipe? Maior? Menor? Ou do mesmo tamanho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem os integrantes da sua equipe lidam com os erros de algum integrante?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência a sua equipe respeita os prazos da entrega dos trabalhos?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem a sua equipe trabalha com os clientes?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão rápida é a sua equipe na implantação das decisões tomadas?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão profissionais são os integrantes da sua equipe?</span></li>
+    </ol>
+    <h1>SUPERVISOR</h1>
+    <ol>
+        <li><input type="checkbox" name="quest" /><span>Quão acessível é o seu superior imediato?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão efetivo é o treinamento que recebe do seu superior imediato?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto o seu superior imediato responde bem aos erros dos funcionários em geral?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão comprometido é o seu superior imediato?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão compreensivo é o seu superior imediato?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão confiável é o seu superior imediato?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência recebe feedback do seu superior imediato em relação ao seu trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão útil é o feedback recebido do seu superior imediato em relação ao seu trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quais são as suas recomendações para o seu superior imediado melhorar o seu desempenho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência seu superior imediato ouve seus funcionários para tomar decisões?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão realista é a expectativa do seu superior imediato em relação ao seu desempenho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem seu superior responde aos erros dos funcionários?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quais são as suas recomendações para o seu supervisor melhorar o seu desempenho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto, o seu desempenho melhorou após receber feedback do seu supervisor?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão acessível para os funcionários é o seu supervisor?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão receptivo é o seu supervisor?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão eficiente é o seu supervisor na utilização dos recursos da empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência o seu supervisor ouvia as opiniões dos funcionários ao tomar decisões?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão razoáveis eram as decisões tomadas pelo seu supervisor?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quanto conhecimento o seu supervisor tem sobre as metas da empresa?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência seu supervisor reconhece o trabalho bem feito pelos funcionários?</span></li>
+        <li><input type="checkbox" name="quest" /><span>De forma geral, quão satisfeito ou insatisfeito está com o seu supervisor?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência recebe feedback do seu supervisor em relação ao seu trabalho?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Com que frequência seu supervisor adverte adequadamente o trabalho mal feito pelos funcionários?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão efetivo é o treinamento que você recebe do seu supervisor?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão fácil é para os funcionários discordar com as decisões tomadas pelo seu supervisor?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Como você considera o tempo que o seu supervisor leva para tomar uma decisão? Muito tempo, pouco tempo ou o tempo
+            adequado?
+        </span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão bem tratado você foi pelo seu supervisor?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Você gostaria de interagir mais com o seu supervisor, menos ou na mesma quantidade com que você interage agora
+            com ele(a)?
+        </span></li>
+    </ol>
+    <h1>SITE</h1>
+    <ol>
+        <li><input type="checkbox" name="quest" /><span>Quão fácil é a navegação no nosso site?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão clara é a informação no nosso site?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão atualizado é o conteúdo do nosso site?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Até que ponto você confia no processo online de checkout em nosso site?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão visualmente atrativo é o nosso site?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão fácil foi encontrar a informação que você estava procurando no nosso site?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Qual é a probabilidade de você recomendar o nosso site?</span></li>
+        <li><input type="checkbox" name="quest" /><span>De forma geral, quão satisfeito ou insatisfeito você está com o nosso site?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão fácil é baixar arquivos do nosso site?</span></li>
+        <li><input type="checkbox" name="quest" /><span>Quão fácil é o processo de checkout em nosso site?</span></li>
+    </ol>
+</body>
+
+</html>
