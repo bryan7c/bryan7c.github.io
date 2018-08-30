@@ -21,15 +21,22 @@
             display: flex;
             align-items: center;
             padding-left: 95px;
+            transition: all .5s;
+            border: 2px solid #ffffff;
+            background: #ffffff;
         }
         ol li {
             display: block;
-            transition: all .5s;
             padding: 10px;
             position: relative;
         }
-        ol li input:focus + span, ol li:hover > span{
-            background-color: #bbecfb;
+        ol li:hover > span{
+            background-color: #d1f4ff;
+        }
+        ol li input:focus + span{
+            border: 2px solid #87e3ff;
+            box-shadow: rgb(0,0,0,.03) 0px 0px 5px;
+            box-shadow: rgb(0,0,0,.04) 1px 1px 3px;
         }
         ol li input:checked + span{
             color: rgb(207, 207, 207);
