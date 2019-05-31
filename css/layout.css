@@ -365,7 +365,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .express {
-  	width: 70%;
+  	width: 20%;
   	-moz-animation: express 2s ease;
   	-webkit-animation: express 2s ease;
 }
@@ -435,7 +435,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .illustrator {
-  	width: 40%;
+  	width: 30%;
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
@@ -449,7 +449,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .ux {
-  	width: 80%;
+  	width: 60%;
   	-moz-animation: ux 2s ease;
   	-webkit-animation: ux 2s ease;
 }
@@ -477,7 +477,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .sass {
-  	width: 80%;
+  	width: 90%;
   	-moz-animation: sass 2s ease;
   	-webkit-animation: sass 2s ease;
 }
@@ -519,7 +519,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .jquery {
-  	width: 80%;
+  	width: 0%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
@@ -533,7 +533,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .vuejs {
-  	width: 80%;
+  	width: 90%;
   	-moz-animation: vuejs 2s ease;
   	-webkit-animation: vuejs 2s ease;
 }
@@ -561,7 +561,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .angularjs {
-  	width: 80%;
+  	width: 60%;
   	-moz-animation: angularjs 2s ease;
   	-webkit-animation: angularjs 2s ease;
 }
@@ -575,7 +575,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .react {
-  	width: 70%;
+  	width: 60%;
   	-moz-animation: react 2s ease;
   	-webkit-animation: react 2s ease;
 }
