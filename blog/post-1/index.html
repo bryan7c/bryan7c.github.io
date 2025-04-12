@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Building a Blazing-Fast Website with Eleventy and Netlify</title>
+        <meta name="description" content="This is the default description for the blog post. Customize it to highlight your content!">
+        <link rel="stylesheet" href="/style.out.css">
+        <meta name="generator" content="Eleventy v3.0.0">
+    </head>
+    <body class="flex flex-col min-h-screen antialiased bg-slate-700">
+        
+            <nav class="p-4 text-xs tracking-widest uppercase bg-slate-800" data-sb-field-path="src&#92;_data&#92;metadata.json:navLinks" aria-label="Navigation menu">
+                <ul class="flex flex-row max-w-4xl gap-6 mx-auto">
+                        <li>
+                            <a class="font-medium  text-slate-400 transition hover:text-slate-500" href="/" data-sb-field-path=".0">Home</a>
+                        </li>
+                        <li>
+                            <a class="font-medium  text-slate-400 transition hover:text-slate-500" href="/blog" data-sb-field-path=".1">Blog</a>
+                        </li>
+                </ul>
+            </nav>
+        
+        <main class="px-4 grow">
+            <div class="max-w-4xl mx-auto mb-16 sm:mb-24">
+                
+<article class="bg-white" data-sb-object-id="src/content/blog/post-1.md">
+    
+        <figure>
+            <img src="/img/uepuPuCL02-960.webp" class="w-full" alt="Building a Blazing-Fast Website with Eleventy and Netlify image" data-sb-field-path="image" loading="lazy" decoding="async" width="960" height="603">
+        </figure>
+    
+    <div class="px-4 pt-12 pb-16 sm:pt-16 sm:pb-24">
+        <header class="max-w-2xl mx-auto mb-8 text-center">
+            <h1 class="mb-2 text-3xl font-bold uppercase sm:text-4xl text-slate-800" data-sb-field-path="title" id="building-a-blazing-fast-website-with-eleventy-and-netlify">Building a Blazing-Fast Website with Eleventy and Netlify</h1>
+            <time class="text-sm text-slate-400" datetime="2024-12-07" data-sb-field-path="date">07 December 2024</time>
+        </header>
+        <div class="max-w-2xl mx-auto prose prose-slate" data-sb-field-path="markdown_content">
+            <p>As a UI designer with a passion for minimal and brutalist design, I’m always on the lookout for tools that offer simplicity, speed, and flexibility. Two of my favorite platforms to achieve this are <strong><a href="https://www.11ty.dev/">Eleventy (11ty)</a></strong> and <strong><a href="https://www.netlify.com/">Netlify</a></strong>. Together, they create a seamless workflow for building fast, modern, and ultra-lightweight websites.</p>
+<h3 id="why-eleventy">Why Eleventy?</h3>
+<p>Eleventy (or 11ty) is a simple yet powerful static site generator. It takes plain text files (like Markdown, HTML, or Nunjucks) and transforms them into a fully static website. It’s minimal, fast, and highly customizable — a perfect fit for those of us who appreciate clean, no-frills design.</p>
+<!--more-->
+<p><strong>Key Benefits of Eleventy:</strong></p>
+<ul>
+<li><strong>No Build Bloat:</strong> It doesn't force you into a specific framework, keeping things lean and fast.</li>
+<li><strong>Supports Multiple Template Languages:</strong> Markdown, Nunjucks, Liquid, and more — use what you love.</li>
+<li><strong>File-based Routing:</strong> Simplicity at its finest — no complex route configurations.</li>
+<li><strong>Minimal Tooling:</strong> No big dependencies, just raw speed and flexibility.</li>
+</ul>
+<h3 id="why-pair-it-with-netlify">Why Pair It with Netlify?</h3>
+<p>While Eleventy is great for generating sites, Netlify makes <strong>deployment a breeze</strong>. Just link your GitHub repo, and every time you push a new commit, Netlify automatically rebuilds and redeploys the site. No manual deployments, no servers, no headaches.</p>
+<p><strong>Key Benefits of Netlify:</strong></p>
+<ul>
+<li><strong>CI/CD Built-In:</strong> Push your changes to GitHub, and Netlify handles the rest.</li>
+<li><strong>Custom Domains &amp; SSL:</strong> No more worrying about certificates.</li>
+<li><strong>Serverless Functions:</strong> Need dynamic functionality? You can extend a static site with Netlify Functions.</li>
+<li><strong>Form Handling &amp; Edge Functions:</strong> Build contact forms with no backend code.</li>
+</ul>
+<h3 id="how-to-set-it-up">How to Set It Up</h3>
+<p>Here’s a quick step-by-step guide to get started:</p>
+<h4 id="1-install-eleventy">1. Install Eleventy</h4>
+<p>If you haven’t already, you’ll need Node.js installed. Then, run:</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">npm</span> init <span class="token parameter variable">-y</span> 
+<span class="token function">npm</span> <span class="token function">install</span> @11ty/eleventy --save-dev</code></pre>
+<p>To start your development server:</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash">npx eleventy <span class="token parameter variable">--serve</span></code></pre>
+<h4 id="2-create-your-first-pages">2. Create Your First Pages</h4>
+<p>Add an <code>index.md</code> file with this content:</p>
+<pre class="language-markdown" tabindex="0"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">layout: layout.njk
+title: Welcome</span>
+<span class="token punctuation">---</span></span>
+
+<span class="token title important"><span class="token punctuation">#</span> Welcome to My Eleventy + Netlify Site!  </span>
+This site is built with <span class="token bold"><span class="token punctuation">**</span><span class="token content">Eleventy</span><span class="token punctuation">**</span></span> and deployed with <span class="token bold"><span class="token punctuation">**</span><span class="token content">Netlify</span><span class="token punctuation">**</span></span>.</code></pre>
+<h4 id="3-configure-eleventy">3. Configure Eleventy</h4>
+<p>You can customize Eleventy by adding an <code>.eleventy.js</code> config file. Here’s a simple setup:</p>
+<pre class="language-js" tabindex="0"><code class="language-js">module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">dir</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">input</span><span class="token operator">:</span> <span class="token string">"src"</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token string">"dist"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<p>This tells Eleventy to process files in the <code>src/</code> folder and output them to a <code>dist/</code> folder.</p>
+<h4 id="4-deploy-to-netlify">4. Deploy to Netlify</h4>
+<ol>
+<li>Push your code to <strong>GitHub, GitLab, or Bitbucket</strong>.</li>
+<li>Log in to <strong>Netlify</strong>, create a new project, and link your repo.</li>
+<li>Set the build command as:<pre class="language-bash" tabindex="0"><code class="language-bash">npx eleventy</code></pre>
+And the output directory as:<pre><code>dist
+</code></pre>
+</li>
+</ol>
+<p>With this setup, every commit triggers a fresh build, and your site goes live automatically.</p>
+<h3 id="example-use-cases">Example Use Cases</h3>
+<ul>
+<li><strong>Portfolios:</strong> Eleventy’s speed and simplicity make it ideal for minimalist portfolios.</li>
+<li><strong>Blogs:</strong> Customizable templates with Markdown support make blog creation effortless.</li>
+<li><strong>Landing Pages:</strong> Fast-loading, static pages with no heavy frameworks required.</li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>If you love fast, minimalist design and hate unnecessary complexity, <strong>Eleventy + Netlify</strong> is a dream team. Eleventy gives you the creative freedom to design without limits, and Netlify makes sure it’s always live and fast.</p>
+<p>If you’re a fan of brutalist design, simplicity, and speed (like I am), this setup is a no-brainer. Ready to build your next site? Get started with <a href="https://www.11ty.dev/">Eleventy</a> and <a href="https://www.netlify.com/">Netlify</a> today.</p>
+
+        </div>
+    </div>
+</article>
+        <nav class="mt-1 text-xs tracking-widest text-white uppercase bg-slate-600">
+            <ul class="flex flex-wrap w-full p-4 gap-x-8 gap-y-2">
+                    <li class="flex-1 w-full text-left">
+                        <a class="transition hover:text-slate-200 text-nowrap" href="/blog/post-2/">← Previous</a>
+                    </li>
+                
+                    <li class="flex-1 w-full text-right">
+                        <a class="transition hover:text-slate-200 text-nowrap" href="/blog/300k_noise_is_back-_uma_volta_triunfal_na_cena_sonora/">Next →</a>
+                    </li>
+                
+            </ul>
+        </nav>
+            </div>
+        </main>
+        
+            <footer class="px-4 pb-16 sm:pb-24">
+                <div class="max-w-4xl mx-auto prose-sm prose text-center prose-slate prose-invert" data-sb-field-path="src&#92;_data&#92;metadata.json:copyrightText"><p>© 2024 Eleventy Blog Starter. All rights reserved.</p>
+</div>
+            </footer>
+        
+    </body>
+</html>
